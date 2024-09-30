@@ -20,6 +20,7 @@ public class FuelCosts {
             System.out.print("Input # of gallons of gas in tank: ");
             if (in.hasNextDouble()){ // if input is a double
                 gallons = in.nextDouble(); // assign variable
+                in.nextLine(); // clear buffer
                 galDouble=true; // end loop
             }
             else{
@@ -34,6 +35,7 @@ public class FuelCosts {
             System.out.print("Input fuel efficiency (miles/gallon): ");
             if (in.hasNextDouble()){ // if input is a double
                 efficiency=in.nextDouble(); // assign variable
+                in.nextLine(); // clear buffer
                 efiDouble=true; // end loop
             }
             else{
@@ -47,6 +49,7 @@ public class FuelCosts {
             System.out.print("What is the price of gas per gallon? $");
             if (in.hasNextDouble()){ // if input is a double
                 priceGallon=in.nextDouble(); // assign variable
+                in.nextLine(); // clear buffer
                 priceDouble=true; // end loop
             }
             else{

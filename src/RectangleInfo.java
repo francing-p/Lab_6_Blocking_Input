@@ -18,6 +18,7 @@ public class RectangleInfo {
             System.out.print("Enter the rectangle's width: ");
             if (in.hasNextDouble()){
                 width = in.nextDouble();
+                in.nextLine(); // clear buffer
                 wDouble = true;
             }
             else{
@@ -31,6 +32,7 @@ public class RectangleInfo {
             System.out.print("Enter the rectangle's length: ");
             if (in.hasNextDouble()){
                 height = in.nextDouble();
+                in.nextLine(); // clear buffer
                  hDouble = true;
             }
             else{

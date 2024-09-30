@@ -14,6 +14,7 @@ public class CtoF {
             if (in.hasNextDouble()){
                 done = true;
                 temperatureC= in.nextDouble();
+                in.nextLine(); // clear buffer
                 temperatureF= temperatureC*(1.8) + 32;
                 System.out.println(temperatureC + "C = " + temperatureF + "F");
             }
