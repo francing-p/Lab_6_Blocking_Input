@@ -16,7 +16,6 @@ public class HighorLow {
             System.out.print("Enter an integer guess between 1-10: ");
             if (in.hasNextInt()) { // check to make sure it is an integer
                 guess = in.nextInt();
-                in.nextLine(); // clear buffer
                 if (guess >= 1 && guess <= 10) { // make sure it's in range
                     if (guess > answer) {
                         System.out.println("Too high. Try again. ");
